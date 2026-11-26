@@ -1,50 +1,59 @@
-/* Aspectul personalizat al paginii. Aranjarea folosește clase Bootstrap. */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   color: #222222;
-  line-height: normal;
 }
 
 h1 {
   margin: 0.67em 0;
   font-size: 28px;
-  line-height: normal;
 }
 
-.product-container {
+.container {
   max-width: 760px;
   gap: 20px;
   background: #edf1f5;
 }
 
-.product-card {
+.card {
   width: 200px;
   max-width: 100%;
-  --bs-card-border-color: #cccccc;
-  --bs-card-border-radius: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  background: white;
 }
 
-.product-image {
+.card img {
   height: 120px;
+  object-fit: contain;
 }
 
-.card-title {
+.card h2 {
   margin: 16px 0 10px;
-  line-height: normal;
+  font-size: 20px;
 }
 
 .pret {
   margin: 18px 0;
   font-size: 18px;
+  font-weight: bold;
 }
 
-.btn-danger {
-  --bs-btn-bg: #ee0a0a;
-  --bs-btn-hover-bg: #f80606;
-  --bs-btn-active-bg: #f80606;
-  --bs-btn-border-width: 0;
-  --bs-btn-border-radius: 6px;
-  --bs-btn-padding-y: 10px;
-  --bs-btn-padding-x: 10px;
-  --bs-btn-line-height: normal;
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #ee0a0a;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  background: #f80606;
 }
