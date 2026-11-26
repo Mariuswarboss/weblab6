@@ -1,0 +1,50 @@
+/* Aspectul personalizat al paginii. Aranjarea folosește clase Bootstrap. */
+body {
+  font-family: Arial, sans-serif;
+  color: #222222;
+  line-height: normal;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 28px;
+  line-height: normal;
+}
+
+.product-container {
+  max-width: 760px;
+  gap: 20px;
+  background: #edf1f5;
+}
+
+.product-card {
+  width: 200px;
+  max-width: 100%;
+  --bs-card-border-color: #cccccc;
+  --bs-card-border-radius: 10px;
+}
+
+.product-image {
+  height: 120px;
+}
+
+.card-title {
+  margin: 16px 0 10px;
+  line-height: normal;
+}
+
+.pret {
+  margin: 18px 0;
+  font-size: 18px;
+}
+
+.btn-danger {
+  --bs-btn-bg: #ee0a0a;
+  --bs-btn-hover-bg: #f80606;
+  --bs-btn-active-bg: #f80606;
+  --bs-btn-border-width: 0;
+  --bs-btn-border-radius: 6px;
+  --bs-btn-padding-y: 10px;
+  --bs-btn-padding-x: 10px;
+  --bs-btn-line-height: normal;
+}
